@@ -4,7 +4,7 @@
 	- Difficulty retargets every 7 minutes
 	- Total coins will be only 84
 	- The default ports are 28442 (connect) and 8484 (json rpc).
-
+    
 
 Development process
 ===================

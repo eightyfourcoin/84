@@ -1,14 +1,10 @@
 TEMPLATE = app
 TARGET =
-VERSION = 84.0
+VERSION = 84.1
 INCLUDEPATH += src src/json src/qt
 DEFINES += QT_GUI BOOST_THREAD_USE_LIB BOOST_SPIRIT_THREADSAFE USE_IPV6 __NO_SYSTEM_INCLUDES
 CONFIG += no_include_pwd
-INCLUDEPATH += src src/json src/qt
-DEFINES += QT_GUI BOOST_THREAD_USE_LIB BOOST_SPIRIT_THREADSAFE BOOST_THREAD_PROVIDES_GENERIC_SHARED_MUTEX_ON_WIN __NO_SYSTEM_INCLUDES
-CONFIG += no_include_pwd
-MOC_DIR = build
-UI_DIR = build
+
 # for boost 1.37, add -mt to the boost libraries
 # use: qmake BOOST_LIB_SUFFIX=-mt
 # for boost thread win32 with _win32 sufix
@@ -19,7 +15,7 @@ UI_DIR = build
 #    BOOST_INCLUDE_PATH, BOOST_LIB_PATH, BDB_INCLUDE_PATH,
 #    BDB_LIB_PATH, OPENSSL_INCLUDE_PATH and OPENSSL_LIB_PATH respectively
 
-For compiling in Windows:
+#For compiling in Windows:
 #BOOST_LIB_SUFFIX=-mgw47-mt-sd-1_53
 #BOOST_INCLUDE_PATH='c:/MinGW-devel/boost_1_53_0'
 #BOOST_LIB_PATH=c:/MinGW-devel/boost_1_53_0/stage/lib
