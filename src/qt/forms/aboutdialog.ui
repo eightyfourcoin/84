@@ -63,7 +63,7 @@
           <cursorShape>IBeamCursor</cursorShape>
          </property>
          <property name="text">
-          <string notr="true">0.3.666-beta</string>
+          <string notr="true">1.3</string>
          </property>
          <property name="textFormat">
           <enum>Qt::RichText</enum>
@@ -105,8 +105,7 @@
 
           This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/) and cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP software written by Thomas Bernard.
 
-          Offical forum: not exist
-        </string>
+          Offical forum On Cryptocointalk.com https://cryptocointalk.com/topic/3320-ann-84-updated-client-with-checkpoints-only-84-coins-ever/   </string>
        </property>
        <property name="wordWrap">
         <bool>true</bool>
