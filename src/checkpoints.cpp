@@ -24,7 +24,7 @@ namespace Checkpoints
     // + Contains no strange transactions
     //
 
-	// Cinnamon has released another updated client with checkpoints JUST FOR YOU 
+	// Cinnamon has released another updated client with checkpoints JUST FOR YOU -----------YES JUST FOR YOUUUUUUUU
     static MapCheckpoints mapCheckpoints =
             boost::assign::map_list_of
             (  0,    uint256("0x4eca3cfb295cb8f84c6dfb52de099c508f18ac5233a95cc10324999fa1898843"))			
@@ -37,8 +37,10 @@ namespace Checkpoints
 						( 71005, uint256("0x07c8f83ea8a2f452fd46241dd99986fc62b08a02994faa3b9c5921c76d5ef586"))
 						( 99022, uint256("0x0b70ed3423484eafcb7b0c06056ef87a53b1b6969c6e09d29c03ad6918d42fdf"))
 						( 115142, uint256("0x0682d1c451a7411730df7a8849b07b4c04128e28fab528abb1968247747ea52b"))
-						
+						( 165013, uint256("0x07cf67d97b8d8871f1dc61d04478283afa99da1729402bd8445d7d0d8e325cdf"))
 						;		
+						
+
 
     bool CheckBlock(int nHeight, const uint256& hash)
     {
