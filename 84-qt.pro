@@ -1,6 +1,6 @@
 TEMPLATE = app
 TARGET =
-VERSION = 0.6.4.5
+VERSION = 0.6.4.6
 INCLUDEPATH += src src/json src/qt
 DEFINES += QT_GUI BOOST_THREAD_USE_LIB BOOST_SPIRIT_THREADSAFE USE_IPV6 __NO_SYSTEM_INCLUDES
 CONFIG += no_include_pwd
@@ -15,16 +15,7 @@ CONFIG += no_include_pwd
 #    BOOST_INCLUDE_PATH, BOOST_LIB_PATH, BDB_INCLUDE_PATH,
 #    BDB_LIB_PATH, OPENSSL_INCLUDE_PATH and OPENSSL_LIB_PATH respectively
 
-#For compiling in Windows:
-#BOOST_LIB_SUFFIX=-mgw46-mt-sd-1_53
-#BOOST_INCLUDE_PATH=c:/MinGW-devel/boost_1_53_0'
-#BOOST_LIB_PATH=c:/deps/boost_1_53_0/stage/lib
-#BDB_INCLUDE_PATH=c:/deps/db-4.8.30.NC/build_unix
-#BDB_LIB_PATH=c:/deps/db-4.8.30.NC/build_unix
-#OPENSSL_INCLUDE_PATH=c:/deps/openssl-1.0.1j/include
-#OPENSSL_LIB_PATH=c:/deps/openssl-1.0.1j
-#MINIUPNPC_INCLUDE_PATH=c:/deps/miniupnpc-1.8
-#MINIUPNPC_LIB_PATH=c:/deps/miniupnpc-1.8
+
 
 
 OBJECTS_DIR = build
@@ -300,7 +291,7 @@ OTHER_FILES += \
 # platform specific defaults, if not overridden on command line
 isEmpty(BOOST_LIB_SUFFIX) {
     macx:BOOST_LIB_SUFFIX = -mt
-    windows:BOOST_LIB_SUFFIX = -mgw47-mt-s-1_53
+    windows:BOOST_LIB_SUFFIX = -mgw46-mt-s-1_55
 }
 
 isEmpty(BOOST_THREAD_LIB_SUFFIX) {
