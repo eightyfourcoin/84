@@ -1,8 +1,9 @@
-84 - a fork of Litecoin version with fast block time and faster confirmations (2 confirmations needed instead of 6). Like Litecoin it uses scrypt as a proof of work scheme.
+84 - a fork of Litecoin version with fast block time and faster confirmations (2 confirmations needed instead of 6). Like Litecoin it uses scrypt 1024 as a proof of work scheme.
 
 	- 84 second block target
 	- Difficulty retargets every 7 minutes
-	- Total coins will be only 84
+	- Total coins were originally designed to be only 84 total.
+	- Since launch it was revealed that .000084 per block will pay forever unless changes are made to codebase
 	- The default ports are 28442 (connect) and 8484 (json rpc).
     
 
