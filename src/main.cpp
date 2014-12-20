@@ -1,7 +1,7 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2012 The Bitcoin developers
 // Copyright (c) 2011-2012 Litecoin Developers
-// Copyright (c) 2013 84 Developers
+// Copyright (c) 2013-2015 84 Developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 //QW5kIHRvIGFsbCB0aGUgYXNzaG9sZXMgd2hvIGNsYWltIEkgYm91Z2h0IHRoaXMgZnJvbSBhIHdlYnNpdGUgZnVjayB5b3UgIQ0KWWVzICwganVzdCBhIGNsb25lLCBvZiBhIGNsb25lICwgb2YgYSBjbG9uZSBlY3QuLi4uLiANCkJ1dCBtYW51YWxseSBkb25lIGJ5IEBjaW5uYW1vbl9jYXJ0ZXIgDQpJIGNvbnNpZGVyIDg0IG15IHByb3Rlc3QgY29pbiBhYm91dCBhIGxvdCBvZiB0aGUgdGhpbmdzIHRoYXQgYXJlIHdyb25nIGluIA0KdGhlIHdvcmxkIG9mIGNyeXB0b2N1cnJlbmN5IGhvd2V2ZXIgYXMgc2NyZXdlZCB1cCBhcyB0aGV5IGFyZSANCkkgc3RpbGwgaGF2ZSBmdW4gd2l0aCBpdC4gDQpSZWFkIHRoaXMgcG9zdCBvbiBWQUxVRSBpIHdyb3RlIGF0IGNyeXB0b2NvaW4gdGFsayB0byBnZXQgYSBiZXR0ZXINCmlkZWEgb2Ygd2h5IGkgY29kZWQgdGhpcyBjb2luIGh0dHBzOi8vY3J5cHRvY29pbnRhbGsuY29tL3RvcGljLzMyODEtaG93LWRvLXlvdS1kZWZpbmUtdGhlLXZhbHVlLW9mLWNyeXB0b2N1cnJlbmN5Lw==
@@ -1354,15 +1354,7 @@ bool CTransaction::ClientConnectInputs()
             if (!VerifySignature(txPrev, *this, i, true, 0))
                 return error("ConnectInputs() : VerifySignature failed");
 
-            ///// this is redundant with the mempool.mapNextTx stuff,
-            ///// not sure which I want to get rid of
-            ///// this has to go away now that posNext is gone
-            // // Check for conflicts
-            // if (!txPrev.vout[prevout.n].posNext.IsNull())
-            //     return error("ConnectInputs() : prev tx already used");
-            //
-            // // Flag outpoints as used
-            // txPrev.vout[prevout.n].posNext = posThisTx;
+        
 
             nValueIn += txPrev.vout[prevout.n].nValue;
 
